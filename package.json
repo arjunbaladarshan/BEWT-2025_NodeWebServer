@@ -1,0 +1,22 @@
+{
+  "name": "du-demo",
+  "version": "1.0.0",
+  "description": "this is just for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "darshan",
+    "uni",
+    "rajkot",
+    "arjun"
+  ],
+  "author": "arjun bala",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
