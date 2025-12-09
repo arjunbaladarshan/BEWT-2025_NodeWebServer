@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     console.log(parsedUrl);
     res.setHeader("content-type", "text/html");
 
-    if (parsedUrl.pathname == "/login") {
+    if (parsedUrl.pathname == "/login" && req.method == "GET") {
       if (parsedUrl.query.un == "arjun" && parsedUrl.query.pw == "bala") {
         res.write("Valid User");
       } else {
@@ -27,5 +27,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, () => {
-  console.log("Server started @ 3000");
+  console.log("Web Server started @ 3000");
 });
